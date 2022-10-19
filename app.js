@@ -6,7 +6,7 @@ const multer = require('multer');
 
 const ImageModel = require('./models/image-models')
 const DonationModel = require('./models/donation-models');
-const { request } = require('express');
+
 
 const app = express();
 const port = process.env.PORT || 3090;
