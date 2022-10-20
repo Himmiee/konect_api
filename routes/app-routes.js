@@ -3,11 +3,15 @@ const mongoose = require('mongoose')
 const router = express.Router();
 
 const multer = require('multer');
+let uri = "mongodb+srv://haliyah:haliyah@cluster0.9ekj33o.mongodb.net/?retryWrites=true&w=majority"
 
 const ImageModel = require('../models/image-models')
 const DonationModel = require('../models/donation-models')
 
-mongoose.connect('mongodb://127.0.0.1:27017/konectdb', {
+mongoose.connect(
+    // 'mongodb://127.0.0.1:27017/konectdb', 
+    uri,
+    {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
