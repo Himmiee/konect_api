@@ -70,15 +70,15 @@ router.post('/donate', (req, res) => {
     })
 })
 
-router.get('/getDetails', (req, res) => {
-    ImageModel.find({}, (err, results) => {
-        if(err) {
-            res.send(err);
-        } else {
-            res.send(results);
-        }
-    })
-})
+// router.get('/getDetails', (req, res) => {
+//     ImageModel.find({}, (err, results) => {
+//         if(err) {
+//             res.send(err);
+//         } else {
+//             res.send(results);
+//         }
+//     })
+// })
 router.get('/getDetailInfo', (req, res) => {
     // console.log(req.query);
     ImageModel.find({name:req.query.name}, (err, results) => {
