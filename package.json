@@ -10,7 +10,8 @@
   "name": "userdetails",
   "version": "1.0.0",
   "engines": {
-    "node": "16.6.0"
+    "node": "16.6.0",
+    "npm": "8.11.0"
   },
   "main": "index.js",
   "scripts": {
