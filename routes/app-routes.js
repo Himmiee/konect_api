@@ -1,7 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const router = express.Router();
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config()
 
 const multer = require('multer');
 // let uri = "mongodb+srv://haliyah:haliyah@cluster0.9ekj33o.mongodb.net/?retryWrites=true&w=majority"
@@ -11,7 +12,7 @@ const DonationModel = require('../models/donation-models')
 
 mongoose.connect(
     // 'mongodb://127.0.0.1:27017/konectdb', 
-    process.env.URI,
+    process.env.URI_NAME,
     {
     useNewUrlParser: true,
     useUnifiedTopology: true
