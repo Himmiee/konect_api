@@ -16,11 +16,11 @@ console.log(uri);
 
 mongoose.connect(
     // 'mongodb://127.0.0.1:27017/konectdb', 
-    uri,
+    `${process.env.URI_NAME}`,
     {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useMongoClient:true 
+    
 });
 
 
