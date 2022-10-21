@@ -10,9 +10,13 @@ const multer = require('multer');
 const ImageModel = require('../models/image-models')
 const DonationModel = require('../models/donation-models')
 
+const uri = process.env.URI_NAME
+
+console.log(uri);
+
 mongoose.connect(
     // 'mongodb://127.0.0.1:27017/konectdb', 
-    process.env.URI_NAME,
+    uri,
     {
     useNewUrlParser: true,
     useUnifiedTopology: true
