@@ -16,7 +16,7 @@ console.log(uri);
 
 mongoose.connect(
     // 'mongodb://127.0.0.1:27017/konectdb', 
-    `${process.env.URI_NAME}`,
+    "mongodb+srv://haliyah:haliyah@cluster0.9ekj33o.mongodb.net/?retryWrites=true&w=majority",
     {
     useNewUrlParser: true,
     useUnifiedTopology: true,
