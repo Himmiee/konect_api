@@ -11,8 +11,11 @@ const port = process.env.PORT || '3090';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors({
+    origin: 'http://localhost:3000',
+}))
+
 app.use('/ngo',ngoRoutes)
-app.use(cors())
 
 
 app.get('/', (req, res) => {
