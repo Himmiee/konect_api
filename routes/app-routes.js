@@ -38,10 +38,6 @@ const upload = multer({
 }).single('testImage')
 
 router.get('/', (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-    res.setHeader('Access-Control-Allow-Credentials', true)
     res.send("it works lol.")
 })
 
@@ -92,10 +88,6 @@ router.get('/getDetails', (req, res) => {
             res.send(err);
         } else {
             res.send(results);
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-            res.setHeader('Access-Control-Allow-Credentials', true)
         }
     })
 })
@@ -105,10 +97,6 @@ router.get('/getDetailInfo', (req, res) => {
         if(err) {
             res.send(err);
         } else {
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-            res.setHeader('Access-Control-Allow-Credentials', true)
             res.send(results);
         }
     })
@@ -119,10 +107,6 @@ router.get('/getDetailSector', (req, res) => {
         if(err) {
             res.send(err);
         } else {
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-            res.setHeader('Access-Control-Allow-Credentials', true)
             res.send(results);
         }
     })
@@ -133,10 +117,6 @@ router.get('/getDonations', (req, res) => {
         if(err) {
             res.send(err);
         } else {
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-            res.setHeader('Access-Control-Allow-Credentials', true)
             res.send(results);
         }
     })
@@ -148,10 +128,6 @@ router.get('/getDonation/:name', (req, res) => {
         if(err) {
             res.send(err);
         } else {
-            res.setHeader('Access-Control-Allow-Origin', '*');
-            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-            res.setHeader('Access-Control-Allow-Credentials', true)
             res.send(results);
         }
     })
