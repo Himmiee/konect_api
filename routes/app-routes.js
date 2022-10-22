@@ -38,6 +38,7 @@ const upload = multer({
 }).single('testImage')
 
 router.get('/', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*')
     res.send("it works lol.")
 })
 
@@ -88,6 +89,7 @@ router.get('/getDetails', (req, res) => {
             res.send(err);
         } else {
             res.send(results);
+            res.set('Access-Control-Allow-Origin', '*')
         }
     })
 })
@@ -107,6 +109,7 @@ router.get('/getDetailSector', (req, res) => {
         if(err) {
             res.send(err);
         } else {
+            res.set('Access-Control-Allow-Origin', '*')
             res.send(results);
         }
     })
@@ -117,6 +120,7 @@ router.get('/getDonations', (req, res) => {
         if(err) {
             res.send(err);
         } else {
+            res.set('Access-Control-Allow-Origin', '*')
             res.send(results);
         }
     })
@@ -128,6 +132,7 @@ router.get('/getDonation/:name', (req, res) => {
         if(err) {
             res.send(err);
         } else {
+            res.set('Access-Control-Allow-Origin', '*')
             res.send(results);
         }
     })
